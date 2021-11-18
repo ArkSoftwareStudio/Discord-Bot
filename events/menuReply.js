@@ -14,6 +14,8 @@ function sliceDesc(desc){
 	if(desc.length >= 4096){
 		desc.slice(0, -6);
 		return desc + '...';
+    }else if(desc.length <= 0){
+        return "No English Description Found! Sorry for the inconvenience... :c"
 	}else{
 		return desc;
 	}
